@@ -15,24 +15,22 @@
     <header>
         <nav class="navbar">
             <div class="nav-izquierda">
-            <a href="index.html" class="logo">CineBox</a>
-            <span class="logo2">Frame</span>
+            <a href="index.html" class="logo">CineBox <span class="logo2">Frame</span></a>
             <a href="index.html">Películas</a>
             <a href="html/candy.html">Candy</a>
             </div>
-
             <button class="menu-btn" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
             </button>
-
             <div class="nav-derecha" id="nav-derecha">
-            <a href="carrito.html" class="carrito">
+              <a href="html/carrito.html" class="carrito">
                 <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-
+              </a>
             <div class="dropdown">
-                <button class="dropdown-btn">Cuenta <i class="fa-solid fa-caret-down"></i></button>
-                <div class="dropdown-content">
+                <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cuenta
+                </a>
+                <div class="dropdown-content dropdown-menu">
                 <a href="html/login.html">Iniciar sesión</a>
                 <a href="html/registro.html">Registrarse</a>
                 </div>
@@ -40,6 +38,7 @@
             </div>
         </nav>
     </header>
+
   <main>
     <!-- Sección del carrusel -->
     <section class="carrusel">
