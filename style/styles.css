@@ -661,6 +661,14 @@ footer p {
     color: #e8e8e8;
     margin-bottom: 0.5rem;
     padding: 1.2rem 1.8rem;
+    background: linear-gradient(135deg, rgba(214, 170, 231, 0.15), rgba(184, 143, 201, 0.1));
+    border-radius: 12px;
+    letter-spacing: 1px;
+    border-left: 4px solid #d6aae7;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* ==== ESTILOS PARA CARRITO ==== */
 
 /* Contenedor principal del carrito */
@@ -855,4 +863,4 @@ main.carrito-main > h1 {
         width: 120px;
         height: 120px;
     }
-}}
+}
