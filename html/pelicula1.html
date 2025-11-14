@@ -40,19 +40,23 @@
         </nav>
 </header>
 
-    <main>
-    <div class="pelicula-container">
-      <h1>BLANCANIEVES</h1>
+  <main>
+
+  <div class="pelicula-wrapper">
+
+    <h1 class="titulo-pelicula">BLANCANIEVES</h1>
+
+    <div class="pelicula-layout">
 
       <div class="pelicula-imagen">
-        <img src="../img/pelicula1.png" alt="Póster de la película" width="430" height="600">
+        <img src="../img/pelicula1.png" alt="Póster de la película">
+        <p class="genero">Drama, Fantasía, Live Action, Musical</p>
       </div>
 
+      <!-- Info a la derecha -->
       <div class="pelicula-info">
-        <p>Drama, Fantasía, Live Action, Musical</p>
-
         <h2>DESCRIPCIÓN</h2>
-        <p>“Blancanieves de Disney” es una nueva versión en imagen real de la película clásica de 1937 . Rachel Zegler interpreta el papel de Blancanieves y Gal Gadot el de su madrastra, la Malvada Reina. Esta mágica aventura nos trae de vuelta el cuento atemporal y sus personajes más queridos: Tímido, Sabio, Mudito, Gruñón, Feliz, Dormilón y Mocoso. “Blancanieves de Disney” está dirigida por Marc Webb y producida por Marc Platt, con Callum McDougall ejerciendo de productor ejecutivo, y cuenta con canciones nuevas originales de Benj Pasek y Justin Paul.</p>
+        <p>“Blancanieves de Disney” es una nueva versión en imagen real de la película clásica de 1937 . Rachel Zegler interpreta el papel de Blancanieves y Gal Gadot el de su madrastra, la Malvada Reina...</p>
 
         <div class="info-item">
           <h3>DURACIÓN</h3>
@@ -69,35 +73,39 @@
           <p>Walt Disney Studios Motion Pictures</p>
         </div>
       </div>
+
+    </div>
+  </div>
+
+  <!-- HORARIOS -->
+  <div class="horarios-container">
+    <h2>HORARIOS DISPONIBLES</h2>
+
+    <h3>SELECCIONAR DÍA</h3>
+    <div class="btn-group">
+      <button type="button" class="btn">HOY</button>
+      <button type="button" class="btn">MAÑANA</button>
+      <button type="button" class="btn">VIERNES</button>
     </div>
 
-    <div class="horarios-container">
-      <h2>HORARIOS DISPONIBLES</h2>
-      
-      <h2>SELECCIONAR DÍA</h2>
-      <div class="btn-group" role="group" aria-label="Seleccionar día">
-        <button type="button" class="btn">HOY</button>
-        <button type="button" class="btn">MAÑANA</button>
-        <button type="button" class="btn">VIERNES</button>
-      </div>
-
-      <div class="btn-group" role="group" aria-label="Seleccionar horario">
-        <button type="button" class="btn">11:00 HS</button>
-        <button type="button" class="btn">14:30 HS</button>
-        <button type="button" class="btn">16:00 HS</button>
-        <button type="button" class="btn">18:45 HS</button>
-        <button type="button" class="btn">21:00 HS</button>
-        <button type="button" class="btn">23:30 HS</button>
-      </div>
+    <h3>SELECCIONAR HORARIO</h3>
+    <div class="btn-group">
+      <button type="button" class="btn">11:00 HS</button>
+      <button type="button" class="btn">14:30 HS</button>
+      <button type="button" class="btn">16:00 HS</button>
+      <button type="button" class="btn">18:45 HS</button>
+      <button type="button" class="btn">21:00 HS</button>
+      <button type="button" class="btn">23:30 HS</button>
     </div>
+  </div>
 
-    <!-- Botón de compra -->
-    <div class="btn-comprar-container">
-      <div class="d-grid">
-        <button class="btn" type="button">COMPRAR ENTRADAS</button>
-      </div>
-    </div>
-  </main>
+  <!-- Botón Comprar -->
+  <div class="btn-comprar-container">
+    <button class="btn btn-comprar">COMPRAR ENTRADAS</button>
+  </div>
+
+</main>
+
 
   <!-- FOOTER -->
   <footer>

@@ -864,3 +864,180 @@ main.carrito-main > h1 {
         height: 120px;
     }
 }
+
+/* ==== CONTENEDOR GENERAL ==== */
+.pelicula-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ==== TÍTULO ==== */
+.titulo-pelicula {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #6a2ab8;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ==== LAYOUT DE PELÍCULA ==== */
+.pelicula-layout {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* ==== IMAGEN ==== */
+.pelicula-imagen img {
+    width: 410px;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+}
+
+.genero {
+    display: block;              /* ← esto garantiza que vaya debajo */
+    width: fit-content;          /* ← mantiene el tamaño del chip */
+    margin: 12px auto 0;         /* ← centrado debajo de la imagen */
+    
+    padding: 5px 14px;
+    background-color: rgba(50, 18, 79, 0.964);
+    color: #eddfff;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid #5f1fa7;
+}
+
+
+
+/* ==== INFO DERECHA ==== */
+.pelicula-info {
+    flex: 1;
+    background: rgba(248, 245, 255, 0.8); /* fondo más claro */
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border: 1px solid #e5d9f7;
+}
+
+/* Título DESCRIPCIÓN */
+.pelicula-info h2 {
+    color: #5c1fa5;
+    font-weight: 800;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+/* Párrafos generales */
+.pelicula-info p {
+    color: #2f2f2f;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+/* Card individual para duración, estreno, distribuidor */
+.info-item {
+    background: #f7e1ffd2;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #c7a4ff;
+    box-shadow: 0 3px 8px rgba(93, 36, 150, 0.1);
+    margin-bottom: 18px;
+}
+
+/* Títulos dentro de cada card */
+.info-item h3 {
+    color: #331b54;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Texto dentro de cada card */
+.info-item p {
+    margin: 0;
+    color: #3a3a3a;
+    font-size: 0.95rem;
+}
+
+
+/* ==== HORARIOS ==== */
+.horarios-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.horarios-container h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e8e8e8;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 1.8rem;
+    background: linear-gradient(135deg, rgba(214, 170, 231, 0.15), rgba(184, 143, 201, 0.1));
+    border-radius: 12px;
+    letter-spacing: 1px;
+    border-left: 4px solid #d6aae7;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== BOTONES DE DÍA / HORA ==== */
+.btn-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btn-group .btn {
+    background: #d5acef;
+    border-radius: 12px;
+    padding: 30px 22px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: 0.25s;
+    color: #4b2170;
+}
+
+.btn-group .btn:hover {
+    background: #c091e0;
+    transform: translateY(-2px);
+}
+
+.btn-group .btn.active {
+    background: #6a2ab8;
+    color: #fff;
+    border-color: #4e1480;
+}
+
+/* ==== BOTÓN COMPRAR ==== */
+.btn-comprar-container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-comprar {
+    background-color: #6a2ab8;
+    color: white;
+    padding: 16px 50px;
+    border-radius: 16px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    transition: 0.25s ease;
+    letter-spacing: 1px;
+}
+
+.btn-comprar:hover {
+    background-color: #8e48d9;
+    transform: translateY(-4px);
+}
