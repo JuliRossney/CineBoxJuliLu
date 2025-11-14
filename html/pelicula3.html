@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Candy | CineBox</title>
+  <title>Película | CineBox</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../style/styles.css">
@@ -40,46 +40,97 @@
         </nav>
     </header>
 
-<main>
-  <h1>PELICULA NOMBRE</h1>
-  <p>terror.</p>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <div class="pelicula-container">
+      <!-- Columna izquierda: Imagen -->
+      <div class="pelicula-imagen">
+        <img src="../img/pelicula3.png" alt="Póster de la película">
+      </div>
 
-  <img src="pelicula.jpg" alt="descripcion">
+      <!-- Columna derecha: Información -->
+      <div class="pelicula-info">
+        <h1>INCEPTION</h1>
+        <p>Terror</p>
 
-  <h2>DESCRIPCIOÓN</h2>
-  <p>toda la descripcioón</p>
+        <h2>DESCRIPCIÓN</h2>
+        <p>Una película que te mantendrá al borde de tu asiento. Experimenta una historia llena de suspenso y misterio que te dejará sin aliento. Los protagonistas se enfrentan a situaciones inesperadas mientras descubren secretos oscuros que cambiarán sus vidas para siempre.</p>
 
-  <h3>DURACIÓN</h3>
-  <p>00h 00m</p>
+        <div class="info-item">
+          <h3>DURACIÓN</h3>
+          <p>02h 15m</p>
+        </div>
 
-  <h3>FECHA DE ESTRENO</h3>
-  <p>00 Mes, 0000</p>
+        <div class="info-item">
+          <h3>FECHA DE ESTRENO</h3>
+          <p>15 Noviembre, 2025</p>
+        </div>
 
-  <h3>DISTRIBUIDOR</h3>
-  <p>JULI LU DGSGSFGD</p>
+        <div class="info-item">
+          <h3>DISTRIBUIDOR</h3>
+          <p>Warner Bros Pictures</p>
+        </div>
+      </div>
+    </div>
 
-  <h2>HORARIO</h2>
-  <h2>DÍA</h2>
+    <!-- Sección de horarios -->
+    <div class="horarios-container">
+      <h2>HORARIOS DISPONIBLES</h2>
+      
+      <h2>SELECCIONAR DÍA</h2>
+      <div class="btn-group" role="group" aria-label="Seleccionar día">
+        <button type="button" class="btn">HOY</button>
+        <button type="button" class="btn">MAÑANA</button>
+        <button type="button" class="btn">VIERNES</button>
+      </div>
 
-  <div class="btn-group" role="group" aria-label="horarios">
-  <button type="button" class="btn btn-primary">11:00 hs</button>
-  <button type="button" class="btn btn-primary">16:00 hs</button>
-  <button type="button" class="btn btn-primary">21:00 hs</button>
-  </div>
+      <div class="btn-group" role="group" aria-label="Seleccionar horario">
+        <button type="button" class="btn">11:00 HS</button>
+        <button type="button" class="btn">14:30 HS</button>
+        <button type="button" class="btn">16:00 HS</button>
+        <button type="button" class="btn">18:45 HS</button>
+        <button type="button" class="btn">21:00 HS</button>
+        <button type="button" class="btn">23:30 HS</button>
+      </div>
+    </div>
 
-<div class="btn-group" role="group" aria-label="dias">
-  <button type="button" class="btn btn-primary">HOY</button>
-  <button type="button" class="btn btn-primary">MAÑANA</button>
-  </div>
+    <!-- Botón de compra -->
+    <div class="btn-comprar-container">
+      <div class="d-grid">
+        <button class="btn" type="button">COMPRAR ENTRADAS</button>
+      </div>
+    </div>
+  </main>
 
-<div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button">COMPRAR</button>
-</div>
-</main>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 CineBox - Todos los derechos reservados.</p>
+  </footer>
 
-<footer>
-    <p>&copy; 2025 CineBox. Todos los derechos reservados.</p>
-</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <!-- JS para el menú -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navDerecha = document.getElementById('nav-derecha');
+    menuBtn.addEventListener('click', () => {
+      navDerecha.classList.toggle('active');
+    });
+
+    // JS para selección de botones
+    const btnGroups = document.querySelectorAll('.btn-group');
+    
+    btnGroups.forEach(group => {
+      const buttons = group.querySelectorAll('.btn');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    });
+  </script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
