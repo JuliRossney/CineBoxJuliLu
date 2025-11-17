@@ -14,303 +14,433 @@
 <body>
 
 <header>
-        <nav class="navbar">
-            <div class="nav-izquierda">
+    <nav class="navbar">
+        <div class="nav-izquierda">
             <a href="../index.html" class="logo">CineBox <span class="logo2">Frame</span></a>
-            <a href="../index.html">Películas</a>
-            <a href="candy.html">Candy</a>
-            </div>
-            <button class="menu-btn" id="menu-btn">
+            <a href="../index.html" class="d-none d-md-inline">Películas</a>
+            <a href="candy.html" class="d-none d-md-inline">Candy</a>
+        </div>
+        <button class="menu-btn d-md-none" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="nav-derecha" id="nav-derecha">
-              <a href="carrito.html" class="carrito">
+        </button>
+        <div class="nav-derecha" id="nav-derecha">
+            <a href="carrito.html" class="carrito">
                 <i class="fa-solid fa-cart-shopping"></i>
-              </a>
+            </a>
             <div class="dropdown">
                 <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Cuenta
                 </a>
                 <div class="dropdown-content dropdown-menu">
-                <a href="login.html">Iniciar sesión</a>
-                <a href="registro.html">Registrarse</a>
+                    <a href="login.html">Iniciar sesión</a>
+                    <a href="registro.html">Registrarse</a>
                 </div>
             </div>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <main>
-    <h1 class="titulo">CANDY</h1>
-    <section>
-      <h2 class="titulocandy">POCHOCLOS</h2>
-      <div class="productos">
+  <main class="container-fluid px-3 px-md-4 px-lg-5">
+    <h1 class="titulo text-center my-4">CANDY</h1>
 
-        <div class="card">
-          <img src="../img/baldedepochoclos.png" alt="Balde de pochoclos" width="120" height="120">
-          <h3>Balde de pochoclos</h3>
-          <p class="precio">$10500</p>
-          <button class="agregar">+</button>
+    <!-- POCHOCLOS -->
+    <section class="my-5">
+      <h2 class="titulocandy mb-4">POCHOCLOS</h2>
+      <div class="row g-3 g-md-4">
+        <!-- Celular: 2 columnas | Tablet/Escritorio: 4 columnas -->
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/baldedepochoclos.png" class="card-img-top mx-auto" alt="Balde de pochoclos" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Balde de pochoclos</h3>
+              <p class="precio fw-bold">$10500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/bolsadepochoclosmediana.png" alt="Bolsa mediana" width="120" height="120">
-          <h3>Bolsa de pochoclos mediana</h3>
-          <p class="precio">$1800</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/bolsadepochoclosmediana.png" class="card-img-top mx-auto" alt="Bolsa mediana" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Bolsa de pochoclos mediana</h3>
+              <p class="precio fw-bold">$1800</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/pochoclosenvasadosmedianos.png" alt="Bolsa envasada mediana" width="120" height="120">
-          <h3>Pochoclos envasados medianos</h3>
-          <p class="precio">$1200</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/pochoclosenvasadosmedianos.png" class="card-img-top mx-auto" alt="Bolsa envasada mediana" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Pochoclos envasados medianos</h3>
+              <p class="precio fw-bold">$1200</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/pochoclosenvasadoschicos.png" alt="Bolsa chica" width="120" height="120">
-          <h3>Pochoclos envasados chicos</h3>
-          <p class="precio">$900</p>
-          <button class="agregar">+</button>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2 class="titulocandy">BEBIDAS</h2>
-      <div class="productos">
-        <div class="card">
-          <img src="../img/cocacola.png" alt="Coca Cola">
-          <h3>Coca Cola</h3>
-          <p class="precio">$2500</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/agua.png" alt="Agua">
-          <h3>Agua</h3>
-          <p class="precio">$1500</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/aguasaborizada.png" alt="Agua saborizada">
-          <h3>Agua saborizada</h3>
-          <p class="precio">$5000</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/aguacongas.png" alt="Agua con gas">
-          <h3>Agua con gas</h3>
-          <p class="precio">$1800</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/sprite.png" alt="Sprite">
-          <h3>Sprite</h3>
-          <p class="precio">$2500</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/fanta.png" alt="Fanta">
-          <h3>Fanta</h3>
-          <p class="precio">$2500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/pochoclosenvasadoschicos.png" class="card-img-top mx-auto" alt="Bolsa chica" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Pochoclos envasados chicos</h3>
+              <p class="precio fw-bold">$900</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="titulocandy">COMBOS</h2>
-      <div class="productos">
-
-        <div class="card">
-          <img src="../img/cafegrandeconchipa.png" alt="Café grande con chipa">
-          <h3>Café grande + Chipa</h3>
-          <p class="precio">$3200</p>
-          <button class="agregar">+</button>
+    <!-- BEBIDAS -->
+    <section class="my-5">
+      <h2 class="titulocandy mb-4">BEBIDAS</h2>
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/cocacola.png" class="card-img-top mx-auto" alt="Coca Cola" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Coca Cola</h3>
+              <p class="precio fw-bold">$2500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/baldepochoclosdosbebidas.png" alt="Balde de pochoclos con dos bebidas">
-          <h3>Pochoclos + 2 Bebidas</h3>
-          <p class="precio">$4500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/agua.png" class="card-img-top mx-auto" alt="Agua" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Agua</h3>
+              <p class="precio fw-bold">$2000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/panchobebida.png" alt="Pancho con bebida">
-          <h3>Pancho + Bebida</h3>
-          <p class="precio">$3000</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/aguasaborizada.png" class="card-img-top mx-auto" alt="Agua saborizada" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Agua saborizada</h3>
+              <p class="precio fw-bold">$5000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/papasnuggetsbebida.png" alt="Papas fritas y nuggets con bebida">
-          <h3>Papas + Nuggets + Bebida</h3>
-          <p class="precio">$3500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/aguacongas.png" class="card-img-top mx-auto" alt="Agua con gas" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Agua con gas</h3>
+              <p class="precio fw-bold">$2000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/sprite.png" class="card-img-top mx-auto" alt="Sprite" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Sprite</h3>
+              <p class="precio fw-bold">$2500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/fanta.png" class="card-img-top mx-auto" alt="Fanta" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Fanta</h3>
+              <p class="precio fw-bold">$2500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="titulocandy">SNACKS</h2>
-      <div class="productos">
-
-        <div class="card">
-          <img src="../img/pancho.png" alt="Pancho">
-          <h3>Pancho</h3>
-          <p class="precio">$1800</p>
-          <button class="agregar">+</button>
+    <!-- COMBOS -->
+    <section class="my-5">
+      <h2 class="titulocandy mb-4">COMBOS</h2>
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/cafegrandeconchipa.png" class="card-img-top mx-auto" alt="Café grande con chipa" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Café grande + Chipa</h3>
+              <p class="precio fw-bold">$3200</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/nuggets.png" alt="Nuggets de pollo">
-          <h3>Nuggets</h3>
-          <p class="precio">$3400</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/baldepochoclosdosbebidas.png" class="card-img-top mx-auto" alt="Balde de pochoclos con dos bebidas" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Pochoclos + 2 Bebidas</h3>
+              <p class="precio fw-bold">$4500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/nachosconqueso.png" alt="Nachos con queso">
-          <h3>Nachos</h3>
-          <p class="precio">$3200</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/panchobebida.png" class="card-img-top mx-auto" alt="Pancho con bebida" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Pancho + Bebida</h3>
+              <p class="precio fw-bold">$4000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/papasfritas.png" alt="Papas fritas">
-          <h3>Papas fritas</h3>
-          <p class="precio">$3000</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/papasnuggetsbebida.png" class="card-img-top mx-auto" alt="Papas fritas y nuggets con bebida" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Papas + Nuggets + Bebida</h3>
+              <p class="precio fw-bold">$10000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="../img/hamburguesa.png" alt="Hamburguesa">
-          <h3>Hamburguesa</h3>
-          <p class="precio">$3800</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/chipa.png" alt="Chipa">
-          <h3>Chipa</h3>
-          <p class="precio">$1500</p>
-          <button class="agregar">+</button>
-        </div>
-
-        <div class="card">
-          <img src="../img/papasfritasenvasadas.png" alt="Papas fritas envasadas">
-          <h3>Papas fritas envasadas</h3>
-          <p class="precio">$2100</p>
-          <button class="agregar">+</button>
-        </div>
-
       </div>
     </section>
 
-    <section>
-      <h2 class="titulocandy">GOLOSINAS</h2>
-      <div class="productos">
-
-        <div class="card">
-          <img src="../img/moritas.png" alt="Moritas">
-          <h3>Moritas</h3>
-          <p class="precio">$1200</p>
-          <button class="agregar">+</button>
+    <!-- SNACKS -->
+    <section class="my-5">
+      <h2 class="titulocandy mb-4">SNACKS</h2>
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/pancho.png" class="card-img-top mx-auto" alt="Pancho" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Pancho</h3>
+              <p class="precio fw-bold">$2500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/m&m.png" alt="M&M">
-          <h3>M&M</h3>
-          <p class="precio">$2000</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/nuggets.png" class="card-img-top mx-auto" alt="Nuggets de pollo" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Nuggets</h3>
+              <p class="precio fw-bold">$5000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/mogul.png" alt="Mogul">
-          <h3>Mogul</h3>
-          <p class="precio">$900</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/nachosconqueso.png" class="card-img-top mx-auto" alt="Nachos con queso" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Nachos</h3>
+              <p class="precio fw-bold">$3500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/chocolate.png" alt="Chocolate">
-          <h3>Chocolate</h3>
-          <p class="precio">$1500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/papasfritas.png" class="card-img-top mx-auto" alt="Papas fritas" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Papas fritas</h3>
+              <p class="precio fw-bold">$4000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/rocklets.png" alt="Rocklets">
-          <h3>Rocklets</h3>
-          <p class="precio">$1500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/hamburguesa.png" class="card-img-top mx-auto" alt="Hamburguesa" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Hamburguesa</h3>
+              <p class="precio fw-bold">$3800</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/alfajor.png" alt="Alfajor">
-          <h3>Alfajor</h3>
-          <p class="precio">$900</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/chipa.png" class="card-img-top mx-auto" alt="Chipa" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Chipa</h3>
+              <p class="precio fw-bold">$1500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/sugusconfitados.png" alt="Sugus confitados">
-          <h3>Sugus confitados</h3>
-          <p class="precio">$700</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/papasfritasenvasadas.png" class="card-img-top mx-auto" alt="Papas fritas envasadas" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Papas fritas envasadas</h3>
+              <p class="precio fw-bold">$2100</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="../img/galletitas.png" alt="Galletitas">
-          <h3>Galletitas</h3>
-          <p class="precio">$1300</p>
-          <button class="agregar">+</button>
-        </div>
-
       </div>
     </section>
 
-    <section>
-      <h2 class="titulocandy">CAFETERÍA Y HELADOS</h2>
-      <div class="productos">
-
-        <div class="card">
-          <img src="../img/cafegrande.png" alt="Café grande">
-          <h3>Café grande</h3>
-          <p class="precio">$2000</p>
-          <button class="agregar">+</button>
+    <!-- GOLOSINAS -->
+    <section class="my-5">
+      <h2 class="titulocandy mb-4">GOLOSINAS</h2>
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/moritas.png" class="card-img-top mx-auto" alt="Moritas" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Moritas</h3>
+              <p class="precio fw-bold">$1200</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/cafechico.png" alt="Café chico">
-          <h3>Café chico</h3>
-          <p class="precio">$1500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/m&m.png" class="card-img-top mx-auto" alt="M&M" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">M&M</h3>
+              <p class="precio fw-bold">$2000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/helado.png" alt="Helado">
-          <h3>Helado</h3>
-          <p class="precio">$2500</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/mogul.png" class="card-img-top mx-auto" alt="Mogul" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Mogul</h3>
+              <p class="precio fw-bold">$900</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="../img/cafegrandemedialuna.png" alt="Café grande con medialuna">
-          <h3>Café + Medialuna</h3>
-          <p class="precio">$3200</p>
-          <button class="agregar">+</button>
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/chocolate.png" class="card-img-top mx-auto" alt="Chocolate" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Chocolate</h3>
+              <p class="precio fw-bold">$1500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
         </div>
 
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/rocklets.png" class="card-img-top mx-auto" alt="Rocklets" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Rocklets</h3>
+              <p class="precio fw-bold">$1500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/alfajor.png" class="card-img-top mx-auto" alt="Alfajor" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Alfajor</h3>
+              <p class="precio fw-bold">$900</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/sugusconfitados.png" class="card-img-top mx-auto" alt="Sugus confitados" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Sugus confitados</h3>
+              <p class="precio fw-bold">$700</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/galletitas.png" class="card-img-top mx-auto" alt="Galletitas" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Galletitas</h3>
+              <p class="precio fw-bold">$1300</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAFETERÍA Y HELADOS -->
+    <section class="my-5">
+      <h2 class="titulocandy mb-4">CAFETERÍA Y HELADOS</h2>
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/cafegrande.png" class="card-img-top mx-auto" alt="Café grande" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Café grande</h3>
+              <p class="precio fw-bold">$2000</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/cafechico.png" class="card-img-top mx-auto" alt="Café chico" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Café chico</h3>
+              <p class="precio fw-bold">$1500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/helado.png" class="card-img-top mx-auto" alt="Helado" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Helado</h3>
+              <p class="precio fw-bold">$2500</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card text-center h-100">
+            <img src="../img/cafegrandemedialuna.png" class="card-img-top mx-auto" alt="Café grande con medialuna" style="width: 120px; height: 120px;">
+            <div class="card-body">
+              <h3 class="card-title h6">Café + Medialuna</h3>
+              <p class="precio fw-bold">$3200</p>
+              <button class="agregar btn btn-primary">+</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -326,9 +456,9 @@
   <!-- JS para el menú -->
   <script>
     const menuBtn = document.getElementById('menu-btn');
-    const navRight = document.getElementById('nav-right');
+    const navDerecha = document.getElementById('nav-derecha');
     menuBtn.addEventListener('click', () => {
-      navRight.classList.toggle('active');
+      navDerecha.classList.toggle('active');
     });
   </script>
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta lang ="es">
-    <meta charset = utf-8>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineBox</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -15,100 +15,146 @@
     <header>
         <nav class="navbar">
             <div class="nav-izquierda">
-            <a href="index.html" class="logo">CineBox <span class="logo2">Frame</span></a>
-            <a href="index.html">Películas</a>
-            <a href="html/candy.html">Candy</a>
+                <a href="index.html" class="logo">CineBox <span class="logo2">Frame</span></a>
+                <a href="index.html" class="d-none d-md-inline">Películas</a>
+                <a href="html/candy.html" class="d-none d-md-inline">Candy</a>
             </div>
-            <button class="menu-btn" id="menu-btn">
-            <i class="fa-solid fa-bars"></i>
+            <button class="menu-btn d-md-none" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
             <div class="nav-derecha" id="nav-derecha">
-              <a href="html/carrito.html" class="carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            <div class="dropdown">
-                <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cuenta
+                <a href="html/carrito.html" class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
-                <div class="dropdown-content dropdown-menu">
-                <a href="html/login.html">Iniciar sesión</a>
-                <a href="html/registro.html">Registrarse</a>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cuenta
+                    </a>
+                    <div class="dropdown-content dropdown-menu">
+                        <a href="html/login.html">Iniciar sesión</a>
+                        <a href="html/registro.html">Registrarse</a>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </header>
 
-  <main>
-    <!-- Sección del carrusel -->
-    <section class="carrusel">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carrusel1.png" class="d-block w-100" alt="Carrusel 1">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel2.png" class="d-block w-100" alt="Carrusel 2">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel3.png" class="d-block w-100" alt="Carrusel 3">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </section>
+    <main class="container-fluid px-3 px-md-4 px-lg-5">
+        <!-- CARRUSEL -->
+        <section class="carrusel my-4">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carrusel1.png" class="d-block w-100" alt="Carrusel 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrusel2.png" class="d-block w-100" alt="Carrusel 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrusel3.png" class="d-block w-100" alt="Carrusel 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
 
-    <!-- Sección de películas -->
-    <section class="tarjetas">
-      <h1>PELÍCULAS EN CARTELERA</h1>
-      <div class="grid-imagenes">
-        <a href="html/pelicula1.html"><img src="img/pelicula1.png" alt="Blancanieves"></a>
-        <a href="html/pelicula2.html"><img src="img/pelicula2.png" alt="Avengers: Endgame"></a>
-        <a href="html/pelicula3.html"><img src="img/pelicula3.png" alt="Inception"></a>
-        <a href="html/pelicula4.html"><img src="img/pelicula4.png" alt="Interestelar"></a>
-        <a href="html/pelicula5.html"><img src="img/pelicula5.png" alt="El Conjuro 4: Últimos Ritos"></a>
-        <a href="html/pelicula6.html"><img src="img/pelicula6.png" alt="La la land"></a>
-        <a href="html/pelicula7.html"><img src="img/pelicula7.png" alt="Orgullo y Prejuicio"></a>
-        <a href="html/pelicula8.html"><img src="img/pelicula8.png" alt="Gladiador"></a>
-      </div>
-    </section>
+        <!-- PELÍCULAS EN CARTELERA -->
+        <section class="tarjetas my-5">
+            <h1 class="section-title mb-4">PELÍCULAS EN CARTELERA</h1>
+            <div class="row g-3 g-md-4">
+                <!-- Celular: 2 columnas | Tablet/Escritorio: 4 columnas -->
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula1.html">
+                        <img src="img/pelicula1.png" class="img-fluid rounded" alt="Blancanieves">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula2.html">
+                        <img src="img/pelicula2.png" class="img-fluid rounded" alt="Avengers: Endgame">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula3.html">
+                        <img src="img/pelicula3.png" class="img-fluid rounded" alt="Inception">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula4.html">
+                        <img src="img/pelicula4.png" class="img-fluid rounded" alt="Interestelar">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula5.html">
+                        <img src="img/pelicula5.png" class="img-fluid rounded" alt="El Conjuro 4: Últimos Ritos">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula6.html">
+                        <img src="img/pelicula6.png" class="img-fluid rounded" alt="La la land">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula7.html">
+                        <img src="img/pelicula7.png" class="img-fluid rounded" alt="Orgullo y Prejuicio">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula8.html">
+                        <img src="img/pelicula8.png" class="img-fluid rounded" alt="Gladiador">
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <!-- PELÍCULAS EN PREVENTA -->
+        <section class="promociones my-5">
+            <h1 class="section-title mb-4">PELÍCULAS EN PREVENTA</h1>
+            <div class="row g-3 g-md-4">
+                <!-- Celular: 2 columnas | Tablet/Escritorio: 4 columnas -->
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula9.html">
+                        <img src="img/pelicula9.png" class="img-fluid rounded" alt="Zootopia 2">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula10.html">
+                        <img src="img/pelicula10.png" class="img-fluid rounded" alt="Wicked: For Good">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula11.html">
+                        <img src="img/pelicula11.png" class="img-fluid rounded" alt="Terror en Shelby Oaks">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="html/pelicula12.html">
+                        <img src="img/pelicula12.png" class="img-fluid rounded" alt="Avatar: Fuego y Cenizas">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Sección de películas en preventa -->
-    <section class="promociones">
-      <h1>PELÍCULAS EN PREVENTA</h1>
-      <div class="grid-imagenes">
-        <a href="html/pelicula9.html"><img src="img/pelicula9.png" alt="Zootopia 2"></a>
-        <a href="html/pelicula10.html"><img src="img/pelicula10.png" alt="Wicked: For Good"></a>
-        <a href="html/pelicula11.html"><img src="img/pelicula11.png" alt="Terror en Shelby Oaks"></a>
-        <a href="html/pelicula12.html"><img src="img/pelicula12.png" alt="Avatar: Fuego y Cenizas"></a>
-      </div>
-    </section>
-  </main>
+    <footer>
+        <p>© 2025 CineBox - Todos los derechos reservados.</p>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 CineBox - Todos los derechos reservados.</p>
-  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- JS para el menú -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const navDerecha = document.getElementById('nav-derecha');
-    menuBtn.addEventListener('click', () => {
-      navDerecha.classList.toggle('active');
-    });
-  </script>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navDerecha = document.getElementById('nav-derecha');
+        menuBtn.addEventListener('click', () => {
+            navDerecha.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
