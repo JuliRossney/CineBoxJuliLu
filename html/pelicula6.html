@@ -45,20 +45,20 @@
 
   <main>
 
-  <div class="pelicula-wrapper">
+  <div class="pelicula-wrapper container">
 
-    <h1 class="titulo-pelicula">LA LA LAND: UNA HISTORIA DE AMOR</h1>
+    <h1 class="titulo-pelicula text-center">LA LA LAND: UNA HISTORIA DE AMOR</h1>
 
-    <div class="pelicula-layout">
+    <div class="pelicula-layout row align-items-start">
 
       <!-- Imagen a la izquierda -->
-      <div class="pelicula-imagen">
+      <div class="pelicula-imagen col-12 col-md-5 col-lg-4 text-center">
         <img src="../img/pelicula6.png" alt="Póster de la película">
         <p class="genero">Comedias románticas, Cine dramático, Películas para reír, Cine romántico y Musicales</p>
       </div>
 
       <!-- Info a la derecha -->
-      <div class="pelicula-info">
+      <div class="pelicula-info col-12 col-md-7 col-lg-8">
         <h2>DESCRIPCIÓN</h2>
         <p>En la Los Ángeles actual, dos ambiciosos artistas se enamoran y descubren la alegría y el dolor de arriesgarlo todo por la verdadera pasión.</p>
 
@@ -81,30 +81,38 @@
     </div>
   </div>
 
-  <!-- HORARIOS -->
-  <div class="horarios-container">
+  <div class="horarios-container container">
+
     <h2>HORARIOS DISPONIBLES</h2>
 
+    <!-- Seleccionar día -->
     <h3>SELECCIONAR DÍA</h3>
-    <div class="btn-group">
-      <button type="button" class="btn">HOY</button>
-      <button type="button" class="btn">MAÑANA</button>
-      <button type="button" class="btn">VIERNES</button>
+    <div class="row justify-content-center g-2 btn-group">
+      <div class="col-4 col-sm-3 col-md-2">
+        <button type="button" class="btn w-100">HOY</button>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2">
+        <button type="button" class="btn w-100">MAÑANA</button>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2">
+        <button type="button" class="btn w-100">VIERNES</button>
+      </div>
     </div>
 
+    <!-- Seleccionar horario -->
     <h3>SELECCIONAR HORARIO</h3>
-    <div class="btn-group">
-      <button type="button" class="btn">11:00 HS</button>
-      <button type="button" class="btn">14:30 HS</button>
-      <button type="button" class="btn">16:00 HS</button>
-      <button type="button" class="btn">18:45 HS</button>
-      <button type="button" class="btn">21:00 HS</button>
-      <button type="button" class="btn">23:30 HS</button>
+    <div class="row justify-content-center g-2 btn-group">
+      <div class="col-6 col-sm-4 col-md-2"><button class="btn w-100">11:00 HS</button></div>
+      <div class="col-6 col-sm-4 col-md-2"><button class="btn w-100">14:30 HS</button></div>
+      <div class="col-6 col-sm-4 col-md-2"><button class="btn w-100">16:00 HS</button></div>
+      <div class="col-6 col-sm-4 col-md-2"><button class="btn w-100">18:45 HS</button></div>
+      <div class="col-6 col-sm-4 col-md-2"><button class="btn w-100">21:00 HS</button></div>
+      <div class="col-6 col-sm-4 col-md-2"><button class="btn w-100">23:30 HS</button></div>
     </div>
   </div>
 
   <!-- Botón Comprar -->
-  <div class="btn-comprar-container">
+  <div class="btn-comprar-container text-center">
     <button class="btn btn-comprar">COMPRAR ENTRADAS</button>
   </div>
 
