@@ -23,6 +23,10 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="nav-derecha" id="nav-derecha">
+                <!-- Links que aparecen solo en móvil cuando se abre el menú -->
+                <a href="index.html" class="d-md-none nav-link-mobile">Películas</a>
+                <a href="html/candy.html" class="d-md-none nav-link-mobile">Candy</a>
+                
                 <a href="html/carrito.html" class="carrito">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
@@ -40,7 +44,7 @@
     </header>
 
     <main class="container-fluid px-3 px-md-4 px-lg-5">
-        <!-- CARRUSEL -->
+        <!-- Sección del carrusel -->
         <section class="carrusel my-4">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -65,11 +69,11 @@
             </div>
         </section>
 
-        <!-- PELÍCULAS EN CARTELERA -->
+        <!-- Sección de películas en cartelera -->
         <section class="tarjetas my-5">
             <h1 class="section-title mb-4">PELÍCULAS EN CARTELERA</h1>
             <div class="row g-3 g-md-4">
-                <!-- Celular: 2 columnas | Tablet/Escritorio: 4 columnas -->
+                <!-- Móvil: 2 columnas | Tablet/Desktop: 4 columnas -->
                 <div class="col-6 col-md-3">
                     <a href="html/pelicula1.html">
                         <img src="img/pelicula1.png" class="img-fluid rounded" alt="Blancanieves">
@@ -113,11 +117,11 @@
             </div>
         </section>
 
-        <!-- PELÍCULAS EN PREVENTA -->
+        <!-- Sección de películas en preventa -->
         <section class="promociones my-5">
             <h1 class="section-title mb-4">PELÍCULAS EN PREVENTA</h1>
             <div class="row g-3 g-md-4">
-                <!-- Celular: 2 columnas | Tablet/Escritorio: 4 columnas -->
+                <!-- Móvil: 2 columnas | Tablet/Desktop: 4 columnas -->
                 <div class="col-6 col-md-3">
                     <a href="html/pelicula9.html">
                         <img src="img/pelicula9.png" class="img-fluid rounded" alt="Zootopia 2">
@@ -142,12 +146,15 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2025 CineBox - Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- JS para el menú -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const navDerecha = document.getElementById('nav-derecha');

@@ -918,3 +918,22 @@ main.carrito-main > h1 {
     background-color: #8e48d9;
     transform: translateY(-4px);
 }
+
+.nav-link-mobile {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(214, 170, 231, 0.1);
+}
+
+.nav-link-mobile:hover {
+    color: #d6aae7;
+    padding-left: 10px;
+    background: rgba(214, 170, 231, 0.1);
+    border-radius: 8px;
+}
