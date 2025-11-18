@@ -18,21 +18,24 @@
     <nav class="navbar">
         <div class="nav-izquierda">
             <a href="../index.html" class="logo">CineBox <span class="logo2">Frame</span></a>
-            <a href="../index.html">Películas</a>
-            <a href="candy.html">Candy</a>
-            </div>
-            <button class="menu-btn" id="menu-btn">
+            <a href="../index.html" class="d-none d-md-inline">Películas</a>
+            <a href="candy.html" class="d-none d-md-inline">Candy</a>
+        </div>
+        <button class="menu-btn d-md-none" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="nav-derecha" id="nav-derecha">
-              <a href="carrito.html" class="carrito">
+        </button>
+        <div class="nav-derecha" id="nav-derecha">
+            <!-- Links que aparecen solo en móvil cuando se abre el menú -->
+            <a href="../index.html" class="d-md-none nav-link-mobile">Películas</a>
+            <a href="candy.html" class="d-md-none nav-link-mobile">Candy</a>
+            
+            <a href="carrito.html" class="carrito">
                 <i class="fa-solid fa-cart-shopping"></i>
-              </a>
+            </a>
             <div class="dropdown">
-                <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown">
+                <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Cuenta
                 </a>
-
                 <div class="dropdown-content dropdown-menu">
                     <a href="login.html">Iniciar sesión</a>
                     <a href="registro.html">Registrarse</a>
