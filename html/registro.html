@@ -15,31 +15,34 @@
 <body>
 
 <header>
-        <nav class="navbar">
-            <div class="nav-izquierda">
+    <nav class="navbar">
+        <div class="nav-izquierda">
             <a href="../index.html" class="logo">CineBox <span class="logo2">Frame</span></a>
-            <a href="../index.html">Películas</a>
-            <a href="candy.html">Candy</a>
-            </div>
-            <button class="menu-btn" id="menu-btn">
+            <a href="../index.html" class="d-none d-md-inline">Películas</a>
+            <a href="candy.html" class="d-none d-md-inline">Candy</a>
+        </div>
+        <button class="menu-btn d-md-none" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="nav-derecha" id="nav-derecha">
-              <a href="carrito.html" class="carrito">
+        </button>
+        <div class="nav-derecha" id="nav-derecha">
+            <a href="../index.html" class="d-md-none nav-link-mobile">Películas</a>
+            <a href="candy.html" class="d-md-none nav-link-mobile">Candy</a>
+            
+            <a href="carrito.html" class="carrito">
                 <i class="fa-solid fa-cart-shopping"></i>
-              </a>
+            </a>
             <div class="dropdown">
                 <a class="nav-link dropdown-toggle dropdown-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Cuenta
                 </a>
                 <div class="dropdown-content dropdown-menu">
-                <a href="login.html">Iniciar sesión</a>
-                <a href="registro.html">Registrarse</a>
+                    <a href="login.html">Iniciar sesión</a>
+                    <a href="registro.html">Registrarse</a>
                 </div>
             </div>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
 <main class="container">
     <div class="row justify-content-center">
@@ -68,6 +71,16 @@
 <footer>
     <p>&copy; 2025 CineBox. Todos los derechos reservados.</p>
 </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS para el menú -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navDerecha = document.getElementById('nav-derecha');
+    menuBtn.addEventListener('click', () => {
+        navDerecha.classList.toggle('active');
+    });
+</script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
