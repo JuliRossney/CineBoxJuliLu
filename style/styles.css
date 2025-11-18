@@ -332,98 +332,6 @@ footer p {
     letter-spacing: 0.5px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-    .grid-imagenes {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 1rem 1.5rem;
-    }
-
-    .nav-izquierda a:not(.logo, .logo2) {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .nav-derecha {
-        position: fixed;
-        top: 70px;
-        right: -100%;
-        background: linear-gradient(135deg, rgba(45, 27, 61, 0.98), rgba(61, 52, 70, 0.98));
-        backdrop-filter: blur(20px);
-        width: 280px;
-        height: calc(100vh - 70px);
-        flex-direction: column;
-        padding: 2rem;
-        transition: right 0.4s ease;
-        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
-        border-left: 1px solid rgba(214, 170, 231, 0.2);
-    }
-
-    .nav-derecha.active {
-        right: 0;
-    }
-
-    .grid-imagenes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .carousel-item img {
-        height: 280px;
-        border-radius: 15px;
-    }
-
-    .tarjetas h1, .promociones h1 {
-        font-size: 1.6rem;
-    }
-
-    .carrusel {
-        margin: 2rem auto;
-        padding: 0 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-imagenes {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .logo {
-        font-size: 22px !important;
-    }
-
-    .logo2 {
-        font-size: 18px !important;
-    }
-
-    .carousel-item img {
-        height: 220px;
-        border-radius: 12px;
-    }
-
-    .tarjetas, .promociones {
-        padding: 2rem 1.5rem;
-    }
-
-    .grid-imagenes img {
-        height: 350px;
-    }
-
-    .tarjetas h1, .promociones h1 {
-        font-size: 1.4rem;
-        padding: 1rem 1.2rem;
-    }
-}
-
 /* Animaciones adicionales */
 @keyframes slideIn {
     from {
@@ -691,14 +599,6 @@ main.carrito-main > h1 {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Layout principal: productos a la izquierda, resumen a la derecha */
-.carrito-contenedor {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
-}
-
 /* Sección de items del carrito */
 .carrito-items {
     display: flex;
@@ -708,7 +608,7 @@ main.carrito-main > h1 {
 
 /* Tarjeta de cada producto */
 .carrito-item {
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 1.5rem;
     background: rgba(238, 225, 255, 0.695);
@@ -840,29 +740,6 @@ main.carrito-main > h1 {
 
 .carrito-resumen button:active {
     transform: translateY(-1px);
-}
-
-/* RESPONSIVE CARRITO */
-@media (max-width: 968px) {
-    .carrito-contenedor {
-        grid-template-columns: 1fr;
-    }
-    
-    .carrito-resumen {
-        position: static;
-    }
-}
-
-@media (max-width: 768px) {
-    .carrito-item {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .carrito-item img {
-        width: 120px;
-        height: 120px;
-    }
 }
 
 /* ==== CONTENEDOR GENERAL ==== */
